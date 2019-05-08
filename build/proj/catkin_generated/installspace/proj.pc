@@ -1,8 +1,0 @@
-prefix=/home/ros/workspace_so/install
-
-Name: proj
-Description: Description of proj
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/ros/workspace_so/install/lib 
-Requires: 

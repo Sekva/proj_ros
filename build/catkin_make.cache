@@ -1,2 +1,0 @@
-proj
--DCATKIN_DEVEL_PREFIX=/home/ros/Área de Trabalho/ROS/proj_ros/devel -DCMAKE_INSTALL_PREFIX=/home/ros/Área de Trabalho/ROS/proj_ros/install -G Unix Makefiles
