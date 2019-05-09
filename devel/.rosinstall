@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/ros/workspace_so/devel/setup.sh
+    local-name: /home/ros/proj_ros/devel/setup.sh
