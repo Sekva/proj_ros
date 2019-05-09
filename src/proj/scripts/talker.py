@@ -4,7 +4,7 @@ import cv2
 from geometry_msgs.msg import Point32
 
 def talker():
-	pub = rospy.Publisher('chatter', Point32, queue_size=10)
+	pub = rospy.Publisher('arduino', Point32, queue_size=10)
 	rospy.init_node('tracker', anonymous=True)
 	rate = rospy.Rate(10) # 10hz
 	while not rospy.is_shutdown():
