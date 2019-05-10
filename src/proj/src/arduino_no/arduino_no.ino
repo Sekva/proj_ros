@@ -4,13 +4,9 @@
 #include <std_msgs/Float32.h>
 #include <math.h>
 
-
 ros::NodeHandle  nh;
-
-
 std_msgs::Float32 norma;
 ros::Publisher publicador("arduino_norma", &norma);
-
 float x, y;
 
 void messageCb( const geometry_msgs::Point32& ponto) {
