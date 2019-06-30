@@ -97,6 +97,24 @@ while True:
 		bottom = int(bottom * r)
 		left = int(left * r)
 
+		c = int(right - (right/2 - left/2))
+
+		if c < 128:
+			print('Setor 1')
+		elif c < 256:
+			print('Setor 2')
+		elif c < 384:
+			print('Setor 3')
+		elif c < 512:
+			print('Setor 4')
+		else:
+			print('Setor 5')
+
+		
+		# c2 = int(top - (top/2 - bottom/2))
+		#
+		# cv2.rectangle(frame, (c, c), (c),(0, 255, 180), 2)
+
 		# draw the predicted face name on the image
 		cv2.rectangle(frame, (left, top), (right, bottom),
 			(0, 255, 0), 2)
