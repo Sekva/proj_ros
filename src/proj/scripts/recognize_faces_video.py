@@ -2,15 +2,6 @@
 # python recognize_faces_video.py --encodings encodings.pickle
 # python recognize_faces_video.py --encodings encodings.pickle --output output/jurassic_park_trailer_output.avi --display 0
 
-# import the necessary packages
-from imutils.video import VideoStream
-import face_recognition
-import argparse
-import imutils
-import pickle
-import time
-import cv2
-
 
 ############################  ROS  ############################
 
@@ -21,7 +12,6 @@ import math
 
 publicador = rospy.Publisher('arduino', Point32, queue_size=10)
 rospy.init_node('tracker', anonymous=True)
-rospy.Subscriber('arduino_norma', Float32, callback)
 
 
 setor = 3
@@ -30,6 +20,15 @@ distancia = 0
 
 ###############################################################
 
+
+# import the necessary packages
+from imutils.video import VideoStream
+import face_recognition
+import argparse
+import imutils
+import pickle
+import time
+import cv2
 
 
 # construct the argument parser and parse the arguments
