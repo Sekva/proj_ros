@@ -14,8 +14,8 @@ import cv2
 import rospy
 from std_msgs.msg import String
 
-pub = rospy.Publisher('chatter', String, queue_size=10)
-rospy.init_node('talker', anonymous=True)
+pub = rospy.Publisher('cv_info', String, queue_size=10)
+rospy.init_node('cv_processor', anonymous=True)
 
 
 
@@ -130,7 +130,7 @@ while True:
 			print(distancia)
 
 
-			s_str = 'a: ' + str(setor) + ' b: ' + str(distancia)
+			s_str = 'setor:' + str(setor) + ';distancia:' + str(distancia)
 			rospy.loginfo(s_str)
 			pub.publish(s_str)
 
