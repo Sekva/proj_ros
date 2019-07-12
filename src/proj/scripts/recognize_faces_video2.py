@@ -126,7 +126,7 @@ while True:
 				setor = 5
 			
 			distancia = right - left
-			distancia = int(float(float(distancia) / 600) * 32)
+			distancia = int(float(float(distancia) / 600) * 31)
 			print(distancia)
 
 
